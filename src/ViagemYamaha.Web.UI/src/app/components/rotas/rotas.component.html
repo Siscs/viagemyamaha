@@ -1,0 +1,30 @@
+
+<div class="container text-center mt-3">
+    <h2>Consultar rota</h2>
+
+    <div class="alert alert-danger" role="alert" *ngIf="mensagemErro != ''">
+        <h5>{{mensagemErro}}</h5>
+    </div>
+
+    <div class="mb-3">
+        <label for="txtorigem" class="form-label">Origem</label>
+        <input type="text" class="form-control" id="txtorigem" placeholder="ex: GUA" [(ngModel)]="origem">
+    </div>
+
+    <div class="mb-3">
+        <label for="txtdestino" class="form-label">Destino</label>
+        <input type="text" class="form-control" id="txtdestino" placeholder="ex: SCL" [(ngModel)]="destino">
+    </div>
+      
+    <div class="d-grid gap-3">
+        <div class="p-2 bg-light border"><button class="btn btn-info btn-lg" (click)="pesquisarRota()"><i class="fa fa-file-text"></i>&nbsp;Pesquisar rota</button>&nbsp;</div>
+    </div>
+
+    <div class="alert alert-warning mt-5" role="alert" *ngIf="melhorRota != ''">
+        <div class="p-2 bg-light border"><h5>Melhor rota: {{melhorRota}}</h5></div>
+    </div>
+
+
+</div>
+
+

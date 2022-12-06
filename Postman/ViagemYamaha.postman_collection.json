@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "ddd7f7b6-8f00-4da2-9ba2-0d276758b126",
+		"name": "ViagemYamaha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consultar rota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7049/api/Rotas?Origem=gua&Destino=DFE",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7049",
+					"path": [
+						"api",
+						"Rotas"
+					],
+					"query": [
+						{
+							"key": "Origem",
+							"value": "gua"
+						},
+						{
+							"key": "Destino",
+							"value": "DFE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar Rota com escala",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"origem\": \"JDI\",\r\n  \"destino\": \"MCO\",\r\n  \"escalas\": [\r\n      \"CMP\",\r\n      \"RIO\",\r\n      \"ALA\"\r\n  ],\r\n  \"valor\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7049/api/Rotas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7049",
+					"path": [
+						"api",
+						"Rotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar Rota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"origem\": \"JDI\",\r\n  \"destino\": \"FOR\",\r\n  \"escalas\": [\r\n  ],\r\n  \"valor\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7049/api/Rotas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7049",
+					"path": [
+						"api",
+						"Rotas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

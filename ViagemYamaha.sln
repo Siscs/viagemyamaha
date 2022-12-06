@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{750A9171-1DC4-4EDD-9425-07B777205FC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FC4573C3-3E2F-46D7-99E9-FEC61E8CC28C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemYamaha.Core", "src\ViagemYamaha.Core\ViagemYamaha.Core.csproj", "{86A6D107-CB75-4174-A917-12879DDEE96D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemYamaha.API", "src\ViagemYamaha.API\ViagemYamaha.API.csproj", "{1EAB278D-C1C6-42B6-A8EE-79A4C84A91FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemYamaha.Console", "src\ViagemYamaha.Console.UI\ViagemYamaha.Console.csproj", "{14A1DD08-0092-42D2-8B11-69280EA32524}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemYamaha.Core.Test", "test\ViagemYamaha.Core.Test\ViagemYamaha.Core.Test.csproj", "{76B9C990-3E3C-416C-933E-D9BDB7CB8E36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Db", "Db", "{D0DD6759-A619-4FF0-96EF-E12B2F764C52}"
+	ProjectSection(SolutionItems) = preProject
+		Db\Rotas.csv = Db\Rotas.csv
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86A6D107-CB75-4174-A917-12879DDEE96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A6D107-CB75-4174-A917-12879DDEE96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A6D107-CB75-4174-A917-12879DDEE96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A6D107-CB75-4174-A917-12879DDEE96D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAB278D-C1C6-42B6-A8EE-79A4C84A91FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAB278D-C1C6-42B6-A8EE-79A4C84A91FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAB278D-C1C6-42B6-A8EE-79A4C84A91FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAB278D-C1C6-42B6-A8EE-79A4C84A91FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A1DD08-0092-42D2-8B11-69280EA32524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A1DD08-0092-42D2-8B11-69280EA32524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A1DD08-0092-42D2-8B11-69280EA32524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A1DD08-0092-42D2-8B11-69280EA32524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B9C990-3E3C-416C-933E-D9BDB7CB8E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B9C990-3E3C-416C-933E-D9BDB7CB8E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B9C990-3E3C-416C-933E-D9BDB7CB8E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B9C990-3E3C-416C-933E-D9BDB7CB8E36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86A6D107-CB75-4174-A917-12879DDEE96D} = {750A9171-1DC4-4EDD-9425-07B777205FC5}
+		{1EAB278D-C1C6-42B6-A8EE-79A4C84A91FF} = {750A9171-1DC4-4EDD-9425-07B777205FC5}
+		{14A1DD08-0092-42D2-8B11-69280EA32524} = {750A9171-1DC4-4EDD-9425-07B777205FC5}
+		{76B9C990-3E3C-416C-933E-D9BDB7CB8E36} = {FC4573C3-3E2F-46D7-99E9-FEC61E8CC28C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1F598A3-D50D-4136-9B74-8B726F1C6D2F}
+	EndGlobalSection
+EndGlobal

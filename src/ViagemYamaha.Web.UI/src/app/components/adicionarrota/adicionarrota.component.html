@@ -1,0 +1,47 @@
+<div class="container text-center mt-3">
+    <h2>Adicionar rota</h2>
+
+    <div class="alert alert-danger" role="alert" *ngIf="mensagemErro != ''">
+        <h5>{{mensagemErro}}</h5>
+    </div>
+
+    <div class="alert alert-success" role="alert" *ngIf="mensagemSucesso != ''">
+        <h5>{{mensagemSucesso}}</h5>
+    </div>
+
+    <div class="mb-3">
+        <label for="txtorigem" class="form-label">Origem</label>
+        <input type="text" class="form-control" id="txtorigem" placeholder="ex: GUA" [(ngModel)]="origem">
+    </div>
+
+    <div class="mb-3">
+        <label for="txtdestino" class="form-label">Destino</label>
+        <input type="text" class="form-control" id="txtdestino" placeholder="ex: SCL" [(ngModel)]="destino">
+    </div>
+
+    <div class="mb-3">
+        <label for="txtvalor" class="form-label">Valor</label>
+        <input type="text" class="form-control" id="txtvalor" placeholder="" [(ngModel)]="valor">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="nome da escala ex: GDG" [(ngModel)]="escala">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="adicionarEscala()">Adicionar escala</button>
+    </div>
+
+    <div class="d-grid gap-3" *ngIf="escalas.length > 0">
+        <h6>Escalas para esta rota</h6>
+        <ul>
+            <li *ngFor="let item of escalas">
+              {{item}}
+            </li>
+        </ul>
+    </div>
+      
+    <div class="d-grid gap-3">
+        <div class="p-2 bg-light border"><button class="btn btn-info btn-lg" (click)="salvarRota()"><i class="fa fa-file-text"></i>&nbsp;Salvar rota</button>&nbsp;</div>
+    </div>
+
+
+
+</div>

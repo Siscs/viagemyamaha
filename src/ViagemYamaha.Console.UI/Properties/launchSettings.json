@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ViagemYamaha.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Temp\\ViagemYamaha\\Db\\rotas.csv"
+    }
+  }
+}
